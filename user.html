@@ -1,13 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/CSS/mainstyle.css">
+    <script src="vendor/bootstarp/js/bootstrap.min.js"></script>
 
+    <title>Dashboard</title>
 </head>
+
 <body>
-   
-    
+    <div class="container-fluid">
+        <div class="row" style="height: 150px;">
+            <div class="col-12 col-lg-2 col-md-2 text-white bg-dark"><img src="images/download.png" alt=""
+                    height="140px" width="250px"></div>
+            <div class="col-12 col-lg-7 col-md-10 text-white bg-primary"><img src="images/bann.jpg" alt=""
+                    height="150px" width="950px"></div>
+            <div class="col-12 col-lg-3 col-md-12 text-white bg-dark">social links</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-2 bg-primary" style="height: auto;">sidebar</div>
+            <div class="col-12 col-lg-10">
+                <table class="table  table-bordered table-hover table-dark table-striped ">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr table-primary>
+                        <td>1</td>
+                        <td>Srishty Pandey</td>
+                        <td>Student</td>
+                        <td><button
+                                style="background-color: rgb(237, 69, 102); font-size: 15px; height: 30px; width: 80px;border: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);color: #ffffff;border-radius: 2px;">Delete</button>
+                            <button
+                                style="background-color:green; font-size: 15px; height: 30px; width: 80px;border: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);color: #ffffff;border-radius: 2px; class="
+                                btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Modify</button>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Aman </td>
+                        <td>Teacher</td>
+                        <td><button
+                                style="background-color: rgb(237, 69, 102); font-size: 15px; height: 30px; width: 80px;border: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);color: #ffffff;border-radius: 2px;">Delete</button>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Soham Tripathi </td>
+                        <td>Student</td>
+                        <td><button
+                                style="background-color: rgb(237, 69, 102); font-size: 15px; height: 30px; width: 80px;border: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);color: #ffffff;border-radius: 2px;">Delete</button>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Pragati Pandey </td>
+                        <td>Teacher</td>
+                        <td><button
+                                style="background-color: rgb(237, 69, 102); font-size: 15px; height: 30px; width: 80px;border: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);color: #ffffff;border-radius: 2px;">Delete</button>
+
+                            <button
+                                style="background-color:green; font-size: 15px; height: 30px; width: 80px;border: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);color: #ffffff;border-radius: 2px; class="
+                                btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Modify</button>
+                        </td>
+                    </tr>
+
+                </table>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Open modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Modal Heading</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                
+                                <form action="www.google.com" method="post">
+                                    <label for="username">User Name:</label><input type="text" style="margin-left: 30px;"><br><br>
+                                    <label for="password">Password:</label><input type="password" name="password" id="" style="margin-left: 40px;"><br><br>
+                                    <label for="email">Email:</label><input type="email" name="email" style="margin: 30px;">
+                                
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                
+                                <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Fading modal -->
+                <div class="modal fade"></div>
+
+                <!-- Modal without animation -->
+                <div class="modal"></div>
+
+            </div>
+
+
+        </div>
+
+
 </body>
+
 </html>
