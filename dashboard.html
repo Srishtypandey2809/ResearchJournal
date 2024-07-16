@@ -1,41 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vendor/bootstarp/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/css/mainstyle.css">
+    <link rel="stylesheet" href="vendor/CSS/mainstyle.css">
     <script src="vendor/bootstarp/js/bootstrap.min.js"></script>
-    
+
     <title>Dashboard</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row" style="height: 150px;">
-            <div class="col-2 text-white bg-dark">logo</div>
-            <div class="col-7 text-white bg-primary">banner</div>
-            <div class="col-3 text-white bg-dark">social links</div>
+            <div class="col-12 col-lg-2 col-md-2 text-white bg-dark">logo</div>
+            <div class="col-12 col-lg-7 col-md-10 text-white bg-primary">banner</div>
+            <div class="col-12 col-lg-3 col-md-12 text-white bg-dark">social links</div>
         </div>
         <div class="row">
-            <div class="col-2 bg-primary" style="height: auto;">sidebar</div>
-            <div class="col-10"> 
+            <div class="col-12 col-lg-2 bg-primary" style="height: auto;">sidebar</div>
+            <div class="col-12 col-lg-10">
                 <div class="row">
-                    <div class="col-3 boxes">col-3</div>
-                    <div class="col-3 boxes">col-3</div>
-                    <div class="col-3 boxes">col-3</div>
-                    <div class="col-3 boxes">col-3</div>
-                    <div class="col-3 boxes">col-3</div>
-                    <div class="col-3 boxes">col-3</div>
-                    <div class="col-3 boxes">col-3</div>
-                    <div class="col-3 boxes">col-3</div>
+                    <div class="col-6 col-lg-3 boxes" style="height: auto;">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
+                    <div class="col-6 col-lg-3 boxes">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
+                    <div class="col-6 col-lg-3 boxes">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
+                    <div class="col-6 col-lg-3 boxes">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
+                    <div class="col-6 col-lg-3 boxes">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
+                    <div class="col-6 col-lg-3 boxes">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
+                    <div class="col-6 col-lg-3 boxes">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
+                    <div class="col-6 col-lg-3 boxes">
+                        <div class="boxcontent"> div 1</div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Typography</h2>
+            <p>Use the .lead class to make a paragraph "stand out":</p>
+            <p class="lead">This paragraph stands out.</p>
+            <p>This is a regular paragraph.</p>
+            <h2>text-start:</h2>
+            <p class="text-start">Left-aligned text.</p>
+            <h2>text-end:</h2>
+            <p class="text-end">Right-aligned text.</p>
+            <h2>text-center</h2>
+            <p class="text-center">Center-aligned text.</p>
+            <h2>text-nowrap:</h2>
+            <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+            <h2>text-lowercase:</h2>
+            <p class="text-lowercase">Lowercased text.</p>
+            <h2>text-uppercase:</h2>
+            <p class="text-uppercase">Uppercased text.</p>
+            <h2>text-capitalize</h2>
+            <p class="text-capitalize">Capitalized text.</p>
+            <h2>Abbrevation</h2>
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>
+            <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly
+                smaller abbr)</p>
+            <h2>list-unstyled</h2>
+            <p>The class .list-unstyled removes the default list-style and left margin on list items (immediate children
+                only):</p>
+            <ul class="list-unstyled">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+                </li>
+                <li>Milk</li>
+            </ul>
+            <h2>list-inline</h2>
+            <p>The class .list-inline places all list items on a single line, when used together with the
+                .list-inline-item:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">Coffee</li>
+                <li class="list-inline-item">Tea</li>
+                <li class="list-inline-item">Milk</li>
+            </ul>
+            <hr>
+            <h2>Contextual Colors</h2>
+            <p>Use the contextual classes to provide "meaning through colors":</p>
+            <h3>text-muted</h3>
+            <p class="text-muted">This text is muted.</p>
+            <h3>text-primary</h3>
+            <p class="text-primary">This text is important.</p>
+            <h3>text-success</h3>
+            <p class="text-success">This text indicates success.</p>
+            <h3>text-info</h3>
+            <p class="text-info">This text represents some information.</p>
+            <h3>text-warning</h3>
+            <p class="text-warning">This text represents a warning.</p>
+            <h3>text-danger</h3>
+            <p class="text-danger">This text represents danger.</p>
+
+            <p class="text-secondary">Secondary text.</p>
+            <p class="text-dark">This text is dark grey.</p>
+            <p class="text-body">Default body color (often black).</p>
+            <p class="text-light">This text is light grey (on white background).</p>
+            <p class="text-white">This text is white (on white background).</p>
+            <hr>
+            <h2>Background Color with Contrasting Text Color</h2>
+            <p class="text-bg-primary">This text is important.</p>
+            <p class="text-bg-success">This text indicates success.</p>
+            <p class="text-bg-info">This text represents some information.</p>
+            <p class="text-bg-warning">This text represents a warning.</p>
+            <p class="text-bg-danger">This text represents danger.</p>
+            <p class="text-bg-secondary">Secondary background color.</p>
+            <p class="text-bg-dark">Dark grey background color.</p>
+            <p class="text-bg-light">Light grey background color.</p>
         </div>
         <div class="row" style="height: 100px; background-color: rgb(132, 243, 230);">
             <div class="col-4"></div>
             <div class="col-8"></div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
