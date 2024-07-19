@@ -34,7 +34,50 @@
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul>
+                        <div id="accordion">
+
+                            <div class="card">
+                              <div class="card-header" style="background-color: brown;">
+                                <a class="btn" data-bs-toggle="collapse" href="#demo1" >
+                                  Home
+                                </a>
+                              </div>
+                              <div id="demo1" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                  Iam Home..
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="card">
+                              <div class="card-header" style="background-color: brown;">
+                                <a class="collapsed btn" data-bs-toggle="collapse" href="#demo2">
+                                  About Us
+                                </a>
+                              </div>
+                              <div id="demo2" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                    
+                                  Iam About..
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="card">
+                              <div class="card-header" style="background-color: brown;">
+                                <a class="collapsed btn" data-bs-toggle="collapse" href="#demo3">
+                                  Education Details
+                                </a>
+                              </div>
+                              <div id="demo3" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body">
+                                  Deatils of education..
+                                </div>
+                              </div>
+                            </div>
+                          
+                          </div>
+                        <!-- <ul>
                             <li><a data-bs-toggle="collapse" data-bs-target="#demo1">Home</a></li>
                             <div id="demo1" class="collapse">
                                 I am Home Button
@@ -55,7 +98,7 @@
                             <div id="demo4" class="collapse">
                                 Contact no. <br> emails
                             </div>
-                        </ul>
+                        </ul> -->
 
                         <button class="btn btn-secondary" type="button">Further Details</button>
                     </div>
